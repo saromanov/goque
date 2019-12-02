@@ -31,7 +31,6 @@ func OpenQueue(dataDir string) (*Queue, error) {
 		db:      &leveldb.DB{},
 		head:    0,
 		tail:    0,
-		isOpen:  false,
 	}
 
 	// Open database for the queue.
